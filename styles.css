@@ -5,6 +5,13 @@ body {
     background-color: #f7f7f7;
 }
 
+.comment-text {
+    margin-top: 5px;
+    color: #333;
+    font-weight: normal;
+    margin-left: 10px;
+}
+
 .comments-section {
     max-width: 600px;
     margin: 0 auto;
@@ -12,17 +19,56 @@ body {
 
 .comment {
     background-color: #fff;
-    padding: 10px;
-    margin-bottom: 15px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    position: relative;
+}
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
 }
 
 .user-info {
-    font-weight: bold;
-    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
-.comment-text {
-    margin-top: 5px;
+.user-info p {
+    margin: 0;
+    line-height: 1.2;
+}
+
+.comment-time {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 0.8em;
+    color: #777;
+}
+
+.username {
+    font-weight: bold;
+}
+
+.comment {
+    position: relative;
+}
+
+.delete-icon {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    color: #f34848;
+    cursor: pointer;
+}
+
+.delete-icon:hover {
+    color: #b60707;
 }

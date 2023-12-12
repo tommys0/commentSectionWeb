@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.comment {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.comment strong {
+    font-weight: bold;
+}
+
+.comment p {
+    margin: 5px 0;
+}
+
+.comment .date {
+    font-size: 12px;
+    color: #888;
+}

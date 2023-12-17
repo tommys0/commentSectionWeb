@@ -4,21 +4,21 @@ let comments = [
         username: "tommyasek",
         date: "2023-02-10T08:30:00",
         text: "velice pekne video",
-        profilePic: "https://placekitten.com/g/200/300"
+        profilePic: "https://gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50"
     },
     {
         id: 2,
         username: "700moradens007",
         date: "2023-05-12T15:45:00",
         text: "jako pokazde, uzasne video!",
-        profilePic: "https://placekitten.com/g/200/300"
+        profilePic: "https://gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50"
     },
     {
         id: 3,
         username: "pademojo",
         date: "2023-11-16T12:00:00",
         text: "za me je bmw lepsi",
-        profilePic: "https://placekitten.com/g/200/300"
+        profilePic: "https://gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50"
     }
 ];
 
@@ -38,7 +38,6 @@ function createComment(comment) {
 
     const profilePicture = new Image();
     profilePicture.src = comment.profilePic;
-    profilePicture.alt = `${comment.username}'s profile picture`;
     profilePicture.classList.add("profile-pic");
     theComment.appendChild(profilePicture);
 
